@@ -1,0 +1,361 @@
+$main-color:#290247
+$main-font:'Philosopher'
+*
+  font-family: 'Philosopher', sans-serif
+  margin:0
+  padding:0
+  box-sizing:border-box
+.main-section
+  position: relative
+  top: 100px
+  width: 1240px
+  height: 1940px
+  margin: 0 auto
+  background: #FFFFFF
+  overflow: hidden
+.header-box
+  position: fixed
+  display: flex
+  top: 0
+  transform: translate(-50%,0)
+  left: 50%
+  flex-direction: row
+  margin: 0 auto
+  height: 80px
+  width: 1240px
+  padding-top: 24px
+  background: #FFFFFF
+  z-index: 3
+  // border: 1px solid #000
+.logo
+  width: 105px
+  height: 40px
+  margin-right: 24px
+.catalogue-box
+  display: flex
+  width: 114px
+  height: 40px
+  border: 0.5px solid $main-color
+  border-radius: 5px
+  background: #FFFFFF
+  cursor: pointer
+  transition: 0.2s
+  margin-right: 125px
+.catalogue-box:hover>p
+  color: #FFFFFF
+.catalogue-box:hover
+  background: $main-color
+.catalogue-box:hover > .burger-box>span
+  border: 1px solid #FFFFFF
+.catalogue-box:hover > .burger-box>span::before
+  border: 1px solid #FFFFFF
+.catalogue-box:hover > .burger-box>span::after
+  border: 1px solid #FFFFFF
+.catalogue-text
+  font-size: 15px
+  line-height: 17px
+  font-weight: 700
+  margin:10px 11px 0 16px
+  text-align: start
+  color: $main-color
+.burger-box
+  position: relative
+  width: 15px
+  height: 15px
+  margin-top: 13px
+.burger-box span,
+.burger-box span::before,
+.burger-box span::after
+  position: absolute
+  width: 15px
+  top: 0px
+  height: 0
+  border: 1px solid $main-color
+  border-radius: 5px
+  left: -1px
+  transition: 0.2s
+.burger-box span::before,
+.burger-box span::after
+  content: " "
+  display: block
+.burger-box span::before
+  transform: translateY(9px)
+.burger-box span::after
+  transform: translateY(4px)
+.catalogue-box_anim span
+  top: 5px
+  transform: translateY(-50%) rotate(45deg)
+.catalogue-box_anim span::before
+  transform: translateY(-50%) rotate(0deg)
+.catalogue-box_anim span::after
+  transform: translateY(-50%) rotate(90deg)
+.search-box
+  display: flex
+  align-items: center
+  width: 505px
+  height: 40px
+  background: #E7E7E7
+  border-radius: 5px
+  gap: 11px
+  padding-left: 12px
+  margin-right: 78px
+.search-box_input
+  font-size: 16px
+  border: none
+  background: #E7E7E7
+  height: 30px
+  width: 90%
+  outline: none
+  &:focus
+    border-bottom: 2px solid #ababab
+.favorite-box
+  width: 58px
+  height: 40px
+  border: none
+  background: #FFFFFF
+  cursor: pointer
+  margin-right: 40px
+.favorite-img
+  margin-left: 17px
+.favorite-text
+  text-align: center
+  font-size: 12px
+  font-family: $main-font
+.login-box
+  width: 100px
+  height: 40px
+  background: $main-color
+  border-radius: 5px
+  border: none
+  cursor: pointer
+  color: #FFFFFF
+  font-weight: 700
+  font-size: 15px
+  line-height: 17px
+.tabs-box
+  position: relative
+  display: flex
+  width: 100%
+  height: 54px
+  transition: 0.2s
+.tabs-box_ul
+  display: flex
+.tabs-box_item
+  margin-top: 8px
+  display: flex
+  width: 100%
+  height: 30px
+  border: 1px solid #110C1F
+  margin-right: 8px
+  font-size: 16px
+  line-height: 18px
+  align-items: center
+  border-radius: 10px
+  padding: 0 16px 0 16px
+  background: #FFFFFF
+  // cursor: pointer
+  &:last-child
+    margin-right: 0px
+.prev-tabs
+  top: 0px
+  left: -1px
+  height: 54px
+  width: 200px
+  position: absolute
+.next-tabs
+  top: 0px
+  left: 1040px
+  height: 54px
+  width: 200px
+  position: absolute
+.poster-box
+  position: relative
+  width: 100%
+  height: 270px
+  background: #B9E6FF
+  border-radius: 5px
+  overflow: hidden
+  margin-bottom: 72px
+.elips-box
+  position: relative
+.elipse
+  background: rgba(43, 34, 68, 0.09)
+.elipse-0
+  position: absolute
+  width: 173px
+  height: 173px
+  border-radius: 100px
+  top: -48px
+  left: -52px
+.elipse-1
+  position: absolute
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  top: 164px
+  left: 128px
+.elipse-2
+  position: absolute
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  top: -11px
+  left: 281px
+.elipse-3
+  position: absolute
+  width: 77px
+  height: 77px
+  border-radius: 100px
+  top: 64px
+  left: 456px
+.elipse-4
+  position: absolute
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  top: 244px
+  left: 558px
+.elipse-5
+  position: absolute
+  width: 123px
+  height: 123px
+  border-radius: 100px
+  top: 185px
+  left: 284px
+.elipse-6
+  position: absolute
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  top: -11px
+  left: 654px
+.poster_img
+  position: absolute
+  left: 697px
+.poster_button
+  position: absolute
+  top: 157px
+  left: 46px
+.poster_h1
+  position: absolute
+  font-weight: 700
+  font-size: 28px
+  line-height: 31px
+  left: 46px
+  top: 72px
+  color: #110C1F
+  font-family: $main-font
+.poster_text
+  position: absolute
+  font-weight: 400
+  font-size: 20px
+  line-height: 22px
+  top: 119px
+  left: 46px
+  color: #110C1F
+  font-family: $main-font
+.popular-text
+  font-size: 32px
+  line-height: 36px
+  letter-spacing: -0.3px
+  font-family: $main-font
+.popular-button
+  position: absolute
+  display: flex
+  align-items: center
+  width: 111px
+  height: 20px
+  border: none
+  background: #FFFFFF
+  cursor: pointer
+  left:91%
+  top: 412px 
+.popular-button_text
+  font-family: $main-font
+  font-size: 12px
+  line-height: 13px
+  color: #110C1F
+  margin-right: 8px
+.popular-button_box
+  position: relative
+  width: 20px
+  height: 20px
+  border: 0.5px solid #110C1F
+  border-radius: 2px
+.popular-button_box-img
+  position: absolute
+  transform: translate(-50%,-50%)
+  left: 50%
+  top: 50%
+.catalogue-section
+  position: fixed
+  display: flex
+  top: 104px
+  left: 0px
+  z-index: 3
+  width: 900px
+  height: 850px
+  visibility: hidden
+  // border: 1px solid #000000
+.columns
+  background: #FFFFFF
+  width: 33.3%
+  height: 100%
+.button-item
+  display: flex
+  // justify-content: center
+  align-items: center
+  border: none
+  width: 100%
+  height: 44px
+  background: #FFFFFF
+  // border: 1px solid #000
+  cursor: pointer
+  padding-left: 20px
+  &:hover
+    background: #E6DCFF
+.button-item_text
+  font-family: $main-font
+  color: #110C1F
+  font-size: 15px
+  line-height: 19.88px
+  text-align: left
+.wall-box
+  position: absolute
+  top: 100px
+  left: 0px
+  width: 100%
+  height: 1940px
+  background: rgba(17, 12, 31, 0.29)
+  backdrop-filter: blur(3.5px)
+  z-index: 2
+  visibility: hidden
+.header-box_center
+  position: fixed
+  background: #FFFFFF
+  width: 100%
+  height: 105px
+  z-index: 3
+  left: 0
+.item-column-2
+  display: flex
+  justify-content: space-between
+  // padding-right: 10px
+  padding: 0 10px 0 20px
+  text-align: left
+.column-2
+  visibility: hidden
+  border-left: 0.5px solid #c7c7c7
+.column-1
+  border-bottom-left-radius: 5px
+.button-item_anim
+  background: #E6DCFF
+  &::hover
+    background: #E6DCFF
+.button-item_anim-2
+  background: #FFFFFF
+  &::hover
+    background: #E6DCFF
+.column-3
+  visibility: hidden
+  border-left: 0.5px solid #c7c7c7

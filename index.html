@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass_css/reset.css" />
+    <link rel="stylesheet" href="/sass_css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Читай книги!</title>
+  </head>
+  <body>
+    <div class="wall-box"></div>
+    <div class="header-box_center">
+      <div class="header-box">
+        <a href="#"><img src="icons/logo.svg" alt="логотип" class="logo" /></a>
+        <button class="catalogue-box">
+          <p class="catalogue-text">Каталог</p>
+          <div class="burger-box">
+            <span></span>
+          </div>
+        </button>
+        <div class="search-box">
+          <img
+            src="icons/search.svg"
+            alt="поиск_картинка"
+            class="search-box_img"
+          />
+          <input type="text" placeholder="Поиск" class="search-box_input" />
+        </div>
+        <a class="favorite-box">
+          <img
+            src="icons/favorites.svg"
+            alt="избранное_картинка"
+            class="favorite-img"
+          />
+          <p class="favorite-text">Избранное</p>
+        </a>
+        <a class="favorite-box">
+          <img
+            src="icons/trash.svg"
+            alt="избранное_картинка"
+            class="favorite-img"
+          />
+          <p class="favorite-text">Корзина</p>
+        </a>
+        <button class="login-box">
+          <p class="login-text">Войти</p>
+        </button>
+        <div class="catalogue-section">
+          <div class="column-1 columns">
+            <!-- <button class="button-item">
+              <p class="button-item_text">Лекарственные препараты и бады</p>
+            </button> -->
+          </div>
+          <div class="column-2 columns">
+            <!-- <button class="button-item item-column-2">
+              <p class="button-item_text">Лекарственные препараты и бады</p>
+              <img src="icons/catalogue-arrow.svg" alt="стрелка">
+            </button> -->
+          </div>
+          <div class="column-3 columns"></div>
+        </div>
+      </div>
+    </div>
+    <section class="main-section">
+      <div class="tabs-box">
+        <button class="tabs-box_item">Все</button>
+        <button class="tabs-box_item">Фентези</button>
+        <button class="tabs-box_item">Детективы</button>
+        <button class="tabs-box_item">Боевики</button>
+        <button class="tabs-box_item">Проза</button>
+        <button class="tabs-box_item">Бизнес</button>
+        <button class="tabs-box_item">Эзотерика</button>
+        <button class="tabs-box_item">Психология</button>
+        <button class="tabs-box_item">Мода</button>
+        <button class="tabs-box_item">Кулинария</button>
+        <button class="tabs-box_item">Биография</button>
+        <button class="tabs-box_item">Хобби</button>
+        <button class="tabs-box_item">Поэзия</button>
+        <button class="tabs-box_item">Приключения</button>
+        <button class="tabs-box_item">Триллеры</button>
+      </div>
+      <div class="prev-tabs"></div>
+      <div class="next-tabs"></div>
+      <div class="poster-box">
+        <div class="elips-box">
+          <div class="elipse-0 elipse"></div>
+          <div class="elipse-1 elipse"></div>
+          <div class="elipse-2 elipse"></div>
+          <div class="elipse-3 elipse"></div>
+          <div class="elipse-4 elipse"></div>
+          <div class="elipse-5 elipse"></div>
+          <div class="elipse-6 elipse"></div>
+        </div>
+        <img src="img/poster-img.png" alt="постер" class="poster_img" />
+        <h1 class="poster_h1">Читай книги - маркетплейс книжных товаров</h1>
+        <p class="poster_text">
+          Сравнивайте цены и бронируйте книги в ближайших магазинах!
+        </p>
+        <button class="login-box poster_button">
+          <p class="login-text">Войти</p>
+        </button>
+      </div>
+      <h1 class="popular-text">Популярное</h1>
+      <button class="popular-button">
+        <p class="popular-button_text">Смотреть всё</p>
+        <div class="popular-button_box">
+          <img
+            src="icons/popular-button_vector.svg"
+            alt="стрелочка"
+            class="popular-button_box-img"
+          />
+        </div>
+      </button>
+    </section>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/alertShow.js"></script>
+  </body>
+</html>
